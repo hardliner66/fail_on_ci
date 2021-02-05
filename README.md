@@ -1,6 +1,6 @@
 # fail_on_ci
 
-Have you ever had the problem that you put in test code, than forget about it and push it to prod?
+Have you ever written temporary test code, forgot about it and push it to prod?
 
 This crate provides you with a macro which fails to compile on known CI servers. Just wrap your test code in it
 and it will only compile it locally.
