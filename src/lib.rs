@@ -20,6 +20,7 @@ static CHECK_VALUE: &[(&str, &str)] = &[
     ("CI_NAME", "codeship"), // Codeship
     ("CI", "drone"),         // Drone
     ("WERCKER", "true"),     // Wercker
+    ("FAIL_ON_CI", "true"),     // Wercker
 ];
 
 fn is_ci() -> bool {
