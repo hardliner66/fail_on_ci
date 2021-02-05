@@ -14,21 +14,21 @@ Below is a list of the CI servers that should be detected.
 Alternatively you can set the environment variable `FAIL_ON_CI` to `true`. This can be used for CI servers that are not supported.
 
 ## Detected CI Servers
-`AppVeyor`
-`AwsCodeBuild`
-`AzurePipelines`
-`Bamboo`
-`BitbucketPipelines`
-`Buddy`
-`Codeship`
-`CircleCI`
-`Drone`
-`Github Actions`
-`Gitlab CI`
-`Jenkins`
-`TeamCity`
-`Travis`
-`Wercker`
+- AppVeyor
+- AwsCodeBuild
+- AzurePipelines
+- Bamboo
+- BitbucketPipelines
+- Buddy
+- Codeship
+- CircleCI
+- Drone
+- Github Actions
+- Gitlab CI
+- Jenkins
+- TeamCity
+- Travis
+- Wercker
 
 ## Example
 
