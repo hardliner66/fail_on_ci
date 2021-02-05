@@ -1,8 +1,6 @@
 extern crate proc_macro;
 use proc_macro::TokenStream;
 
-use syn::{parse_macro_input, DeriveInput};
-
 static CHECK_EXISTENCE: &[&str] = &[
     "CODEBUILD_CI",            // AwsCodeBuild
     "BUILD_DEFINITIONVERSION", // AzurePipelines
