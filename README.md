@@ -30,14 +30,44 @@ Alternatively you can set the environment variable `FAIL_ON_CI` to `true`. This 
 - Travis
 - Wercker
 
-## Example
+## Examples
 
+### Use for expression
 ```rust
-use fail_on_ci::fail_on_ci;
+use fail_on_ci::*;
 
-fn main() -> {
+// Struct used for local test
+#[derive(FailOnCi)]
+struct TestStruct {}
+
+// alias for FailOnCi
+#[derive(TempStruct)]
+struct TestStruct2 {}
+
+#[temp_function]
+fn test_function() -> bool {
+    true 
+}
+
+fn main() {
+    // insert arbitrary code
     fail_on_ci!{
         println!("This doesn't compile on CI!");
+    }
+    
+    // alias for fail_on_ci
+    temp_code!{
+        println!("This doesn't compile on CI!");
+    }
+    
+    // returns true
+    if temp_true!() {
+        println!("Hello, world!");
+    }
+    
+    // returns false
+    if temp_false!() {
+        println!("Hello, world!");
     }
 }
 ```
