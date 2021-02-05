@@ -4,6 +4,8 @@ description = "Script to abort compilation if one of the known CI-Servers is det
 version = "0.1.0"
 authors = ["hardliner66 <hardliner66@gmail.com>"]
 edition = "2018"
+license-file = "LICENSE"
+repository = "https://github.com/hardliner66/fail_on_ci"
 
 [lib]
 proc-macro = true
