@@ -1,5 +1,6 @@
 [package]
 name = "fail_on_ci"
+description = "Script to abort compilation if one of the known CI-Servers is detected."
 version = "0.1.0"
 authors = ["hardliner66 <hardliner66@gmail.com>"]
 edition = "2018"
